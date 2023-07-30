@@ -93,4 +93,13 @@
     padding: 20px;
     margin-bottom: 15px;
   }
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .large-hidden {
+    display: none;
+  }
 }

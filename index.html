@@ -12,161 +12,20 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body class="bg-[#27213C] text-white max-w-[1440px] mx-auto">
-   <!-- Header Section -->
-    <header>
-      <!-- Top Bar Section -->
-      <article
-        class="hidden h-[37px] lg:flex justify-center items-center bg-gradient-to-r from-[#FEAF04] from-100% via-[#D98D1B] via-1000% to-[#FFD056] to-90%"
-      >
-        <p
-          class="text-[12px] leading-[14px] font-[600] text-center text-[#1B1B1B]"
-        >
-          Now Accepting Credit Card & Other Payment Methods
-        </p>
-      </article>
-      <!-- Navbar Section -->
-      <nav
-        class="h-[63px] pt-[23px] lg:pt-0 lg:border-b flex justify-start items-center border-white border-opacity-[15%]"
-      >
-        <!-- Navbar Container -->
-        <article
-          class="flex justify-between items-center gap-5 w-[calc(100vw-48px)] lg:w-[calc(100vw-200px)] mx-auto relative"
-        >
-          <!-- First Column of the Navbar -->
-          <div class="flex items-center justify-between gap-[40px]">
-            <!-- Navbar Logo -->
-            <img
-              src="./assets/Cart/logo.png"
-              class="p-[8px_10px] bg-white rounded-full"
-              alt=""
-            />
-            <!-- Navbar Search Box -->
-            <div
-              class="hidden lg:flex justify-between items-center gap-2 border border-white border-opacity-25 p-[8px_13px] rounded-[4px] w-[470px]"
-            >
-              <input
-                type="text"
-                placeholder="Search"
-                class="bg-transparent text-sm focus:pl-4 max-w-full duration-300 border-0 outline-o focus:outline-0 placeholder:opacity-70"
-              />
-              <button>
-                <i class="fa-solid fa-magnifying-glass opacity-70"></i>
-              </button>
-            </div>
-          </div>
-          <!-- Second Column of the Navbar for large devices-->
-          <div class="lg:flex items-center gap-1 hidden">
-            <!-- Navbar Currency Dropdown -->
-            <div
-              class="text-[12px] leading-[20px] font-[600] flex items-center"
-            >
-              <label for=""><i class="fa-solid fa-sack-dollar"></i></label>
-              <select
-                class="bg-transparent cursor-pointer"
-                name="USD"
-                id="currency"
-              >
-                <option value="USD" selected>USD</option>
-                <option value="BDT">BDT</option>
-              </select>
-            </div>
-            <!-- Login Button -->
-            <button
-              class="text-[13px] leading-[22px] font-[700] hover:text-[#FCAB00] duration-200 mx-[24px]"
-            >
-              Login
-            </button>
-            <!-- Sign Up Button -->
-            <div class="flex items-center gap-[7px]">
-              <button
-                class="p-[7px_9px_7px_9px] lg:p-[11px_18px_11px_17px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-transparent hover:text-[#FCAB00] duration-200"
-              >
-                <span class="whitespace-pre">Sign Up</span>
-              </button>
-              <button
-                class="p-[11px_13px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-transparent hover:text-[#FCAB00] duration-200"
-              >
-                <i class="fa-solid fa-cart-plus h-[15px] w-[18px]"></i>
-              </button>
-            </div>
-          </div>
-          <!-- This is only for mobile devices -->
-          <div class="lg:hidden">
-            <!-- Menu Bar Icon for small devices -->
-            <button id="openMenu">
-              <i class="fa-solid fa-bars text-[33px]"></i>
-            </button>
-            <!-- Navbar Menu List for mobile devices -->
-            <div
-              id="menuList"
-              class="bg-[#241f36] z-30 text-white absolute top-full right-0 duration-300 border border-white border-opacity-25 rounded-[10px] px-4 py-6 w-[300px]"
-            >
-              <div class="flex flex-col gap-5">
-                <!-- Search Box for mobile devices -->
-                <div
-                  class="flex justify-between items-center gap-2 border border-white border-opacity-25 p-[8px_13px] rounded-[4px]"
-                >
-                  <input
-                    type="text"
-                    placeholder="Search"
-                    class="bg-transparent text-sm focus:pl-4 w-full duration-300 border-0 outline-o focus:outline-0 placeholder:opacity-70"
-                  />
-                  <button>
-                    <i class="fa-solid fa-magnifying-glass opacity-70"></i>
-                  </button>
-                </div>
-                <!-- Currency Dropdown -->
-                <div
-                  class="text-[12px] leading-[20px] font-[600] flex items-center gap-2 mx-auto"
-                >
-                  <label for=""><i class="fa-solid fa-sack-dollar"></i></label>
-                  <select
-                    class="bg-transparent cursor-pointer"
-                    name="USD"
-                    id="currency"
-                  >
-                    <option value="USD" selected>USD</option>
-                    <option value="BDT">BDT</option>
-                  </select>
-                </div>
-                <!-- Login Button -->
-                <button
-                  class="p-[7px_9px_7px_9px] lg:p-[11px_18px_11px_17px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-transparent hover:text-[#FCAB00] duration-200"
-                >
-                  <span class="whitespace-pre">Login</span>
-                </button>
-                <!-- Sign Up Button -->
-                <button
-                  class="p-[7px_9px_7px_9px] lg:p-[11px_18px_11px_17px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-transparent hover:text-[#FCAB00] duration-200"
-                >
-                  <span class="whitespace-pre">Sign Up</span>
-                </button>
-                <!-- Cart Button -->
-                <button
-                  class="p-[11px_13px] text-[13px] text-[#27213C] leading-[22px] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-transparent hover:text-[#FCAB00] duration-200"
-                >
-                  <i class="fa-solid fa-cart-plus h-[15px] w-[18px]"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </nav>
-     
-    </header>
-  <main class="md:px-[109.66px]">
-<p class="w-[106px] h-[24px] text-[15px] mt-[39px]">Home <span class="h-10px w-[5px] text-[#FFFFFF80]">></span> <span class="text-[#FFFFFF80]">Cart</span></p>
-<h2 class="mt-[56px] font-[800] text-[46px] w-[464px]">SHOPPING CART (3)</h2>
-<div class="md:flex items-center">
+  
+  <main class="md:px-[109.66px] px-[24px] mx-auto">
+<p class="mobile-hidden w-[106px] h-[24px] text-[15px] mt-[39px]">Home <span class="h-10px w-[5px] text-[#FFFFFF80]"> ></span> <span class="text-[#FFFFFF80]"> Cart</span></p>
+<h2 class="mt-[56px] font-[800] text-[20px] md:text-[46px] md:w-[464px]">SHOPPING CART (3)</h2>
+<div class="lg:flex items-center">
   <!-- Order Quantity Card -->
-  <div class="md:w-[823px] h-[501.99px] mt-[45px] text-[#FFFFFF]">
-  <table class="table-auto">
+  <div class="mobile-hidden md:w-[823px] md:h-[501.99px] mt-[45px] text-[#FFFFFF]">
+  <table class="table-auto ">
     <thead>
       <!-- Table header -->
       <tr class="font-[100] text-[16px] text-[#FFFFFF]">
         <th class=" pb-[20px] text-start">PRODUCT</th>
-        <th class=" pb-[20px]">Price</th>
-        <th class=" pb-[20px]">Qty</th>
+        <th class="pb-[20px]">Price</th>
+        <th class="pb-[20px]">Qty</th>
         <th class=" pb-[20px]">Total</th>
       </tr>
     </thead>
@@ -176,13 +35,13 @@
         <td class="pt-[20px] pb-[10px] flex items-center gap-[15px]"><img class="w-[131px] h-[106px] rounded-[10px]" src="./assets/Cart/Rectangle 57.png" alt="">
 
           <div>
-            <h3 class="text=[18px] font-[700]">THE VAGABOND ROOFTOP TENT</h3>
+            <h3 class="md:text=[18px] font-[700]">THE VAGABOND ROOFTOP TENT</h3>
             <p>Color: Forest Green / Hper Orange</p>
           </div></td>
         <td class="px-4 pt-[20px] pb-[10px]"> <p>$1799</p></td>
-        <td class="px-4 pt-[20px] pb-[10px]"><div class="flex">
+        <td class="px-4 pt-[20px] pb-[10px]"><div class="lg:flex">
           <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">-</button>
-          <button class="border-y-[1px] py-[5px] px-[21px]">1</button>
+          <p><button class="border-y-[1px] py-[5px] md:px-[21px] px-[10px]">1</button></p>
           <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
         </div></td>
         <td class="px-4 pt-[20px] pb-[10px]"><p class="py-[3px] px-[10px] bg-[#00B67A] rounded-[5px] font-[700]">$1799</p></td>
@@ -223,7 +82,7 @@
   <p class="font-[700] text-[18px] mt-[30px]"> <span class="text-[#FCAB00] mr-[10px]"><i class="fa-solid fa-arrow-left"></i></span>  Continue shopping</p>
   </div>
   <!-- Order Summery Card -->
-<div class="w-[348.42px] h-[620.45px] ml-[30px]  bg-[#000000B2] rounded-[12px]">
+<div class="mobile-hidden w-[348.42px] h-[620.45px] ml-[30px]  bg-[#000000B2] rounded-[12px]">
   <p class="pl-[20px] text-[20px] pt-[29px] font-[700px]">ORDER SUMMERY</p>
   <div class="w-[300px] mx-auto">
     <div class="flex justify-between border-y-[1px] border-[#CFCFCF33] my-[19px] font-[400px] py-[19px]">
@@ -245,8 +104,61 @@
   </div>
 </div>
 </div>
-<section class="mt-[112px] text-center">
-<h2 class="font-[800] text-[35px] ">Are you a professional gamer or a supplier <br>
+<!-- For Mobile Responsive Quantity -->
+<div class="large-hidden">
+  <div class="flex items-center mt-[20px] py-[15px] border-t-[1px] border-[#CFCFCF33]">
+    <img class="w-[78px] h-[65px] rounded-[10px]" src="./assets/Cart/Rectangle 57 (1).png" alt="">
+    <div class="ml-[15px]">
+      <p class="text-[12px] font-[700]">THE VAGABOND ROOFTOP TENT</p>
+      <p class="py-[3px] px-[8px] bg-[#00B67A] mt-[5px] w-[60px]  rounded-[5px] font-[700] text-center">$1799</p>
+    </div>
+    <div class="pl-[30px]">
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">-</button>
+      <p><button class="border-y-[1px] py-[5px] px-[10px] ">1</button></p>
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
+    </div>
+  </div>
+  <div class="flex items-center mt-[10px] py-[15px] border-t-[1px] border-[#CFCFCF33]">
+    <img class="w-[78px] h-[65px] rounded-[10px]" src="./assets/Cart/Rectangle 57 (1).png" alt="">
+    <div class="ml-[15px]">
+      <p class="text-[12px] font-[700]">THE VAGABOND ROOFTOP TENT</p>
+      <p class="py-[3px] px-[8px] bg-[#00B67A] mt-[5px] w-[60px]  rounded-[5px] font-[700] text-center">$1799</p>
+    </div>
+    <div class="pl-[30px]">
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">-</button>
+      <p><button class="border-y-[1px] py-[5px] px-[10px] ">1</button></p>
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
+    </div>
+  </div>
+  <div class="flex items-center mt-[10px] py-[15px] border-t-[1px] border-[#CFCFCF33]">
+    <img class="w-[78px] h-[65px] rounded-[10px]" src="./assets/Cart/Rectangle 57 (1).png" alt="">
+    <div class="ml-[15px]">
+      <p class="text-[12px] font-[700]">THE VAGABOND ROOFTOP TENT</p>
+      <p class="py-[3px] px-[8px] bg-[#00B67A] mt-[5px] w-[60px]  rounded-[5px] font-[700] text-center">$1799</p>
+    </div>
+    <div class="pl-[30px]">
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">-</button>
+      <p><button class="border-y-[1px] py-[5px] px-[10px] ">1</button></p>
+      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
+    </div>
+  </div>
+</div>
+ <!-- For Mobile Responsive Cart -->
+ <div class="large-hidden">
+  <div class="flex justify-between mt-[10px] py-[20px] border-y-[1px] border-[#CFCFCF33]"><p>HAVE A PROMO CODE?</p><i class="fa-solid fa-angle-down"></i></div>
+
+  <div class="flex justify-between mt-[10px] py-[20px] border-b-[1px] border-[#CFCFCF33] text-[#FFFFFF99]"><p>Sub-total (Includes taxes)
+$5397</p> <p class="pr-[20px]">$5397</p></div>
+<div class="flex justify-between my-[20px]">
+  <p>Total Cost</p>
+<p class="font-[700]">$5397</p>
+</div>
+<button class="border-[1px] rounded-[300px] w-full mt-[20px] py-[11px] px-[13px] font-[700] bg-[#69F6A4] text-[#27213C]">CHECKOUT</button>
+<p class="text-[#FFFFFF99] text-center mt-[24px]"><i class="fa-solid fa-shield-halved"></i><span class="ml-[5px]">SSL Secure Payment</span></p>
+ </div>
+ <!-- Footer Content -->
+<section class="md:mt-[112px] mt-[40px] text-center">
+<h2 class="font-[800] md:text-[35px]">Are you a professional gamer or a supplier <br>
   willing to work with Overgear?</h2>
   <p class="text-[15px] my-[20px]">Join our team of over 5,000 of professional gamers and suppliers who get paid <br>
     helping other gamers worldwide.</p>
