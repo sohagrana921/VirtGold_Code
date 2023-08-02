@@ -275,9 +275,10 @@
 <div class="mobile-hidden w-[348.42px] h-[620.45px] ml-[30px]  bg-[#000000B2] bg-gradient-to-t from-[#FCAB0035] via-[#47292096] to-[#FCAB004D] rounded-[12px]">
   <p class="pl-[20px] text-[20px] pt-[29px] font-[700px]">ORDER SUMMERY</p>
   <div class="w-[300px] mx-auto">
-    <div class="flex justify-between border-y-[1px] border-[#CFCFCF33] my-[19px] font-[400px] py-[19px]">
-     <p>Items 3</p>
-      <p>$5397</p>
+    <div class="flex items-center justify-between border-y-[1px] border-[#CFCFCF33] my-[19px] font-[400px] py-[19px]">
+    
+      <div >Items <span id="cartTotalItems">3</span></div>
+<div>$<span id="cartTotalPrice">5397</span></div>
     </div>
     <p>Shipping</p>
     <button id="delivery-option" class="flex w-full mt-[20px] justify-between items-center text-[14px] p-[10px] border-[1px] rounded-[300px]">Regular Delivery <span class="pl-[10px]">$5.00</span> <i class="fa-solid fa-angle-down"></i></button>
@@ -290,12 +291,11 @@
     <p class="mt-[19px]">Promo Code </p>
     <input placeholder="Enter Your Code" type="text" class="w-full bg-transparent mt-[20px] justify-between items-center text-[14px] p-[10px] border-[1px] rounded-[300px]"></input>
     <button class="py-[12px] px-[30px] bg-[#FFFFFF33] w-full mt-[9px]">Apply</button>
-  <div class="flex justify-between border-t-[1px] mt-[20px]">
-    <p class="mt-[12px]">Total Cost</p>
-  <p class="mt-[12px] font-[700] text-[#00B67A]">$5397</p>
-  
+  <div class="flex items-center justify-between border-t-[1px] mt-[20px]">
+    <p class="mt-[20px]">Total Cost</p>
+  <p class="mt-[20px]">$<span id="total-cost">5397</span></p>
   </div>
-  <button class="border-[1px] rounded-[300px] w-full mt-[20px] py-[11px] px-[13px] font-[700] bg-[#69F6A4] text-[#27213C]">Pay $ 5397</button>
+  <button class="border-[1px] rounded-[300px] w-full mt-[20px] py-[11px] px-[13px] font-[700] bg-[#69F6A4] text-[#27213C]">Pay $ <span id="total-cost-btn">5397</span></button>
   <p class="text-[#FFFFFF99] text-center mt-[24px]"><i class="fa-solid fa-shield-halved"></i><span class="ml-[5px]">SSL Secure Payment</span></p>
   </div>
 </div>
@@ -309,9 +309,9 @@
       <p class="py-[3px] px-[8px] bg-[#00B67A] mt-[5px] w-[60px]  rounded-[5px] font-[700] text-center">$1799</p>
     </div>
     <div class="pl-[30px]">
-      <button class="py-[5px] border-[1px] px-[10px] bg-transparent text-[white]">-</button>
-      <p><input type="text" value="1" class="border-[2px] bg-transparent py-[5px] text-white px-[10px] w-[30px]"></input></p>
-      <button class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
+      <button id="minus-button1-mob" class="py-[5px] border-[1px] px-[10px] bg-transparent text-[white]">-</button>
+      <p><input type="text" id="product-Quantity1-mob" value="1" class="border-[2px] bg-transparent py-[5px] text-white px-[10px] w-[30px]"></input></p>
+      <button id="plus-button1-mob" class="py-[5px] px-[10px] bg-[#FCAB00] text-[#2E253A]">+</button>
     </div>
   </div>
   <div class="flex items-center mt-[10px] py-[15px] border-t-[1px] border-[#CFCFCF33]">
@@ -437,3 +437,4 @@ $5397</p> <p class="pr-[20px]">$5397</p></div>
   </body>
 </html>
 <!-- -------------- -->
+
