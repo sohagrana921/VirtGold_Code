@@ -216,4 +216,80 @@ function selectDeliveryOption(optionText, cost) {
   // Hide the delivery options after selection (optional)
   deliveryOptions.classList.add("hidden");
 }
-// For Mobile
+//----------------For Mobile-------------------
+// product-1
+const plusBtn1 = document.getElementById("plus-button1-mob");
+const minusBtn1 = document.getElementById("minus-button1-mob");
+
+const productQuantityInput1Mob = document.getElementById(
+  "product-Quantity1-mob"
+);
+const mobTotal1 = document.getElementById("mob-total");
+const mobTotal1T = document.getElementById("mob-total-t");
+let productQuantity1Mob = parseInt(productQuantityInput1Mob.value);
+
+plusBtn1.addEventListener("click", () => {
+  productQuantity1Mob++;
+  productQuantityInput1Mob.value = productQuantity1Mob;
+  mobTotal1.textContent = parseInt(productQuantityInput1Mob.value) * 1799;
+  mobTotal1T.textContent = parseInt(productQuantityInput1Mob.value) * 1799;
+});
+minusBtn1.addEventListener("click", () => {
+  if (productQuantity1Mob > 1) {
+    productQuantity1Mob--;
+    productQuantityInput1Mob.value = productQuantity1Mob;
+    mobTotal1.textContent = parseInt(productQuantityInput1Mob.value) * 1799;
+    mobTotal1T.textContent = parseInt(productQuantityInput1Mob.value) * 1799;
+  }
+});
+
+// product-2
+const plusBtn2 = document.getElementById("plus-button2-mob");
+const minusBtn2 = document.getElementById("minus-button2-mob");
+
+const productQuantityInput2Mob = document.getElementById(
+  "product-Quantity2-mob"
+);
+const mobTotal2 = document.getElementById("mob-total");
+const mobTotal2T = document.getElementById("mob-total-t");
+let productQuantity2Mob = parseInt(productQuantityInput2Mob.value);
+
+plusBtn2.addEventListener("click", () => {
+  productQuantity2Mob++;
+  productQuantityInput2Mob.value = productQuantity2Mob;
+  mobTotal2.textContent = parseInt(productQuantityInput2Mob.value) * 1799;
+  mobTotal2T.textContent = parseInt(productQuantityInput2Mob.value) * 1799;
+});
+minusBtn2.addEventListener("click", () => {
+  if (productQuantity2Mob > 1) {
+    productQuantity2Mob--;
+    productQuantityInput2Mob.value = productQuantity2Mob;
+    mobTotal2.textContent = parseInt(productQuantityInput2Mob.value) * 1799;
+    mobTotal2T.textContent = parseInt(productQuantityInput2Mob.value) * 1799;
+  }
+});
+// product-3
+const plusBtn3 = document.getElementById("plus-button3-mob");
+const minusBtn3 = document.getElementById("minus-button3-mob");
+
+const productQuantityInput3Mob = document.getElementById(
+  "product-Quantity3-mob"
+);
+const mobTotal = document.getElementById("mob-total");
+const mobTotal3T = document.getElementById("mob-total-t");
+
+let productQuantity3Mob = parseInt(productQuantityInput3Mob.value);
+
+plusBtn3.addEventListener("click", () => {
+  productQuantity3Mob++;
+  productQuantityInput3Mob.value = productQuantity3Mob;
+  mobTotal.textContent = parseInt(productQuantityInput3Mob.value) * 1799;
+  mobTotal3T.textContent = parseInt(productQuantityInput3Mob.value) * 1799;
+});
+minusBtn3.addEventListener("click", () => {
+  if (productQuantity3Mob > 1) {
+    productQuantity3Mob--;
+    productQuantityInput3Mob.value = productQuantity3Mob;
+    mobTotal3T.textContent = parseInt(productQuantityInput3Mob.value) * 1799;
+  }
+});
