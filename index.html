@@ -277,11 +277,16 @@
   <div class="w-[300px] mx-auto">
     <div class="flex items-center justify-between border-y-[1px] border-[#CFCFCF33] my-[19px] font-[400px] py-[19px]">
     
-      <div >Items <span id="cartTotalItems">3</span></div>
+      <div >Items 3</span></div>
 <div>$<span id="cartTotalPrice">5397</span></div>
     </div>
     <p>Shipping</p>
-    <button id="delivery-option" class="flex w-full mt-[20px] justify-between items-center text-[14px] p-[10px] border-[1px] rounded-[300px]">Regular Delivery <span class="pl-[10px]">$5.00</span> <i class="fa-solid fa-angle-down"></i></button>
+  
+    <select id="delivery-options" class="select select-bordered w-full max-w-xs bg-transparent rounded-[300px] border-[1px]  p-[10px] mt-[20px]">
+      <option  class="bg-[#000000B2]">Regular Delivery $5.00</option>
+      <option class="bg-[#000000B2]">Standard Delivery $8.00</option>
+      <option class="bg-[#000000B2]">Fast Delivery $10.00</option>
+    </select>
      <!-- Add a div for delivery options -->
      <div class="mt-[20px] hidden" id="delivery-options">
       <button class="flex w-full justify-between items-center text-[14px] p-[10px] border-[1px] rounded-[300px]">Standard Delivery <span class="pl-[10px]">$8.00</span></button>

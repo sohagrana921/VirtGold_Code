@@ -52,16 +52,13 @@ function updateTotalValue1() {
 }
 // Update the total quantity based on the product price and quantity
 function updateCartPlus() {
-  let cartItem = document.getElementById("cartTotalItems");
   let cartPrice = document.getElementById("cartTotalPrice");
 
-  cartItem.textContent = parseInt(cartItem.textContent) + 1;
   cartPrice.textContent = parseInt(cartPrice.textContent) + 1799;
 }
 function updateCartMinus() {
-  let cartItem = document.getElementById("cartTotalItems");
   let cartPrice = document.getElementById("cartTotalPrice");
-  cartItem.textContent = parseInt(cartItem.textContent) - 1;
+
   cartPrice.textContent = parseInt(cartPrice.textContent) - 1799;
 }
 
@@ -160,13 +157,12 @@ function updateTotalValue3() {
 function updateCartPlus() {
   let cartItem = document.getElementById("cartTotalItems");
   let cartPrice = document.getElementById("cartTotalPrice");
-  cartItem.textContent = parseInt(cartItem.textContent) + 1;
+
   cartPrice.textContent = parseInt(cartPrice.textContent) + 1799;
 }
 function updateCartMinus() {
-  let cartItem = document.getElementById("cartTotalItems");
   let cartPrice = document.getElementById("cartTotalPrice");
-  cartItem.textContent = parseInt(cartItem.textContent) - 1;
+
   cartPrice.textContent = parseInt(cartPrice.textContent) - 1799;
 }
 minusButton3.addEventListener("click", () => {
@@ -194,28 +190,6 @@ plusButton3.addEventListener("click", () => {
   totalAmount.textContent = parseInt(cartPrice.textContent) + 5;
   totalAmountBtn.textContent = parseInt(cartPrice.textContent) + 5;
 });
-// -----------------
-document
-  .getElementById("delivery-option")
-  .addEventListener("click", function () {
-    var deliveryOptions = document.getElementById("delivery-options");
-    if (deliveryOptions.classList.contains("hidden")) {
-      deliveryOptions.classList.remove("hidden");
-    } else {
-      deliveryOptions.classList.add("hidden");
-    }
-  });
-function selectDeliveryOption(optionText, cost) {
-  var deliveryOptions = document.getElementById("delivery-options");
-  var selectedDeliveryText = document.getElementById("delivery-option-text");
-  var selectedDeliveryBox = document.getElementById("selected-delivery");
-
-  selectedDeliveryText.textContent = optionText;
-  selectedDeliveryBox.classList.remove("hidden");
-
-  // Hide the delivery options after selection (optional)
-  deliveryOptions.classList.add("hidden");
-}
 //----------------For Mobile-------------------
 // product-1
 const plusBtn1 = document.getElementById("plus-button1-mob");
